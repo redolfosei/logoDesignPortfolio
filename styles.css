@@ -1,0 +1,149 @@
+/* Global view/Desktop */
+body {
+    font-family: 'Asap', sans-serif;
+    background-color: #ebebeb;
+}
+
+.container {
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 130px; 
+}
+
+.col {
+    /* background-color:#F94892;
+    min-height: 200px; */
+    background-color:#F94892;
+    width: 30%; 
+    margin-bottom: 30px;
+    padding: 10px; 
+}
+
+.col img {
+    width: 100%;
+    height: auto; 
+}
+
+.col p {
+    color: white;
+    font-size: 0.9rem;
+    padding: 5px; 
+}
+
+.col p::first-line {
+    font-weight: bold;
+}
+
+
+.hideDesktopOnly {
+    display: none;
+}
+
+
+.header-container {
+    background-color: gray; 
+    min-height: 100px; 
+    position:fixed; 
+    width: 100%; 
+    
+}
+
+.logo {
+    margin-left: 15.5px; 
+    padding: 50px 0; 
+    /* flex: 1; */
+}
+
+header {
+    max-width: 1024px; 
+    /* background-color: #F94892;  */
+    color: white;
+    min-height: 100px; 
+    margin: 0 auto; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header span {
+    font-weight: bolder;
+}
+
+nav {
+    color: white;
+    text-decoration: none;
+    /* flex: 2; */
+    margin-right: 10px;
+}
+
+nav a {
+    color: white; 
+    text-decoration: none;
+    border: 1px solid white; 
+    scroll-padding-left: 10px; 
+    padding: 20px 38px;
+}
+
+/* .footer-container {
+
+}
+
+footer {
+
+} */
+
+/* Tablet view */
+@media (max-width: 768px) {
+    .col {
+        width: 45%;
+    }
+
+    .hideDesktopOnly {
+        display: block; 
+    }
+
+    header { 
+        display: block; 
+        text-align: center; 
+    }
+
+    header a {
+        display: block; 
+        text-align: center;
+    }
+
+    .header-container {
+        position: relative; 
+    }
+
+    .container {
+        padding-top: 5px; 
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Mobile View  */
+@media (max-width: 400px) {
+    .col {
+        width: 100%; 
+    }
+
+    .hideMobile {
+        display: none; 
+    }
+
+    
+    
+}
