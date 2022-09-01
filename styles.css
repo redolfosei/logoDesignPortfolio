@@ -4,6 +4,11 @@ body {
     background-color: #ebebeb;
 }
 
+a {
+    text-decoration: none;
+    color: white; 
+}
+
 .container {
     min-height: 500px;
     max-width: 1024px;
@@ -81,21 +86,20 @@ nav {
     margin-right: 10px;
 }
 
-nav a {
+.navbtn {
     color: white; 
     text-decoration: none;
     border: 1px solid white; 
-    scroll-padding-left: 10px; 
+    padding-left: 10px; 
     padding: 20px 38px;
 }
 
-/* .footer-container {
-
+.mob-wrapper {
+    display: none; 
 }
 
-footer {
 
-} */
+
 
 /* Tablet view */
 @media (max-width: 768px) {
@@ -107,15 +111,10 @@ footer {
         display: block; 
     }
 
-    header { 
-        display: block; 
-        text-align: center; 
-    }
-
     header a {
-        display: block; 
         text-align: center;
     }
+
 
     .header-container {
         position: relative; 
@@ -124,6 +123,30 @@ footer {
     .container {
         padding-top: 5px; 
     }
+
+    nav {
+        display: none;
+    }
+
+    .mob-wrapper {
+        display: block; 
+        margin-right: 20px;
+    }
+
+    .mob-nav {
+        display: none; 
+        position: absolute; 
+    }
+
+    .mobNavBtn {
+        display: block; 
+        background-color: #F94892;
+        padding: 15px 20px; 
+        margin-left: -55.5px; /* bcos of the position absolute */
+        text-align: center;
+    }
+
+
 }
 
 
